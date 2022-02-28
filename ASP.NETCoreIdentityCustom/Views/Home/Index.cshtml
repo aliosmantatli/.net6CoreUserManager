@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <h1>Hoşgeldiniz</h1>
+    <h2>Proje Ödevi gerekli İşlemler </h2>
+
+    <h3>Ortak işlemler </h3>
+    <pre>
+    Uygulamada iki tip kullanıcı olacaktır. (Yönetici, Kullanıcı)
+    Yönetici tanımı manuel oluşturulabilir, ancak uygulama girişi tek olacaktır.
+    Kullanıcı kayıt işlemi.(Register) (e-posta, şifre, ad soyad ve cep telefonu - validasyonlar yapılacaktır)
+    Yönetici ve Kullanıcı için giriş işlemi. (Login)
+    Uygulama menüsü yönetici için ve kullanıcı için farklılık gösterecektir..
+    </pre>
+    <h3>Kullanıcı İşlemleri </h3>
+    <pre>
+    Kullanıcı giriş yaptıktan sonra yeni bir talep oluşturacaktır. 
+    Bu talepte ad soyad (zorunlu), açıklama (seçimli) ve belge ekleme (zorunlu) olacaktır.
+    Kullanıcı yaptığı talepleri bir liste şeklinde görecek
+    ve talep değerlendirmesinin değerlendirme zamanı ve (olumlu/olumsuz) değerlendirme sonucunu görecektir.
+    </pre>
+    <h3>Yönetici işlemleri </h3>
+    <pre>
+    Yönetici değerlendirme yapılmamış talepleri tarih sırasında liste halinde görecektir.
+    Talebin ayrıntısını tıklayarak ne istendiğini ve ekini görüntüleyebilecektir.
+    Daha sonra talebi olumlu/olumsuz olarak değerlendirecek ve bir açıklama yazacaktır.
+    Yönetici olumlu / olumsuz sonuçlanan işlemlerin raporunu alabilecektir. (Format önemli değil)
+    </pre>
+    <h3>Sunucu işlemleri </h3>
+    <pre>
+    Değerlendirme sonrasında kullanıcının e-postasına değerlendirme  açıklaması ile birlikte talebin sonucunun 
+    olumlu ya da olumsuz olduğunu bildiren bir ileti otomatik olarak gönderilecektir.
+    </pre>
+</div>
