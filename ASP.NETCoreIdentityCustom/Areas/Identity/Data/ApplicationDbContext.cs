@@ -22,6 +22,8 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser, IdentityR
 
         builder.ApplyConfiguration(new ApplicationUserEntityConfiguration());
     }
+
+    public DbSet<Ticket> Tickets { get; set; }
 }
 
 public class ApplicationUserEntityConfiguration : IEntityTypeConfiguration<ApplicationUser>

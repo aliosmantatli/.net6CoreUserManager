@@ -34,7 +34,7 @@
                         {
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Role Access Demo
+                                    Rolü
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li class="nav-item">
@@ -45,6 +45,32 @@
                                     </li>
                                     <li>
                                         <a class="dropdown-item" asp-area="" asp-controller="RoleViews" asp-action="Admin">Admin</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Kullanıcı Talepler
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Tickets" asp-action="Index">Tüm Talepler</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" asp-area="" asp-controller="Tickets" asp-action="Create">Talep Ekle</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Admin Talepler
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="" asp-controller="Order" asp-action="OrderAmin">Tüm Talepler</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" asp-area="" asp-controller="Order" asp-action="Confirm">Talep Onayla</a>
                                     </li>
                                 </ul>
                             </li>
