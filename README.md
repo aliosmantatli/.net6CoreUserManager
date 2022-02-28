@@ -1,12 +1,12 @@
 .NET-Core-Identity-Custom-master
 
--Kullanıcı register,login, update yapabilme - tamam
--Kullanıcı user ve manager role tanımlama - tamam 
--Arayüz türkçeleştirme - tamam
--Kullanıcı talep oluşturma-görüntüleme - 
--Manager talep görüntüleme onaylama(olumlu-olumsuz) - 
--Manager talep onay mail gönderme - 
--Manager talepler çıktı alma(olumlu-olumsuz) - 
+- Kullanıcı register,login, update yapabilme - tamam
+- Kullanıcı user ve manager role tanımlama - tamam 
+- Arayüz türkçeleştirme - tamam
+- Kullanıcı talep oluşturma-görüntüleme - 
+- Manager talep görüntüleme onaylama(olumlu-olumsuz) - 
+- Manager talep onay mail gönderme - 
+- Manager talepler çıktı alma(olumlu-olumsuz) - 
 
 Kaynaklar
 - https://docs.microsoft.com/tr-tr/aspnet/core/mvc/controllers/routing?view=aspnetcore-6.0
