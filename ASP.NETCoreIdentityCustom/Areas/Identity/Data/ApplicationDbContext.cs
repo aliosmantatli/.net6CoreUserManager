@@ -34,3 +34,31 @@ public class ApplicationUserEntityConfiguration : IEntityTypeConfiguration<Appli
         builder.Property(u => u.LastName).HasMaxLength(255);
     }
 }
+
+public class TicketEntityConfiguration : IEntityTypeConfiguration<Ticket>
+{
+    public void Configure(EntityTypeBuilder<Ticket> builder)
+    {
+        builder.ToTable("Tickets");
+        builder.HasKey(p => p.Id);
+
+        builder.Property(x => x.Ad).IsRequired();
+        builder.Property(x => x.Soyad).IsRequired();
+
+
+        #region ForeingKey
+
+        builder.HasOne(d => d.ApplicationUser)
+            .WithMany(p => p.Tickets)
+            .HasForeignKey(d => d.UserId)
+            .OnDelete(DeleteBehavior.ClientSetNull);
+
+        #endregion
+
+        #region Index
+
+        //entity.HasIndex(e => new { e.BilgiTipId, e.KisiId }, "UIX_BilgiTipId_KisiId").IsUnique();
+
+        #endregion
+    }
+}
