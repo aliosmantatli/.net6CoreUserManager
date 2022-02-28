@@ -17,4 +17,5 @@ Kaynaklar
   MVC Login and Registration with Identity - Identity Customization - .NET Core 6 - Part 2
   Video: https://www.youtube.com/watch?v=4nXB_GfYIko&list=PLJo5QOn8moNw43NcHM6ZfZ5AMzPuGM8ey&index=4
   Github Code: https://github.com/i-see-pi-sharp/.NET-Core-Identity-Custom
+- Role e Göre Layout View Sekme Gizleme, Farklı Admin Panel Görünümü : https://stackoverflow.com/questions/66873146/load-different-views-dependant-on-user-role-asp-net-core-mvc
 - 
