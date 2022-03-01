@@ -3,7 +3,7 @@
 - Kullanıcı register,login, update yapabilme - tamam
 - Kullanıcı user ve manager role tanımlama - tamam 
 - Arayüz türkçeleştirme - tamam
-- Kullanıcı talep oluşturma-görüntüleme - 
+- Kullanıcı talep oluşturma-görüntüleme - tamam
 - Manager talep görüntüleme onaylama(olumlu-olumsuz) - 
 - Manager talep onay mail gönderme - 
 - Manager talepler çıktı alma(olumlu-olumsuz) - 
