@@ -35,6 +35,8 @@ public class ApplicationUserEntityConfiguration : IEntityTypeConfiguration<Appli
     }
 }
 
+
+// Foreign key veri tabanına 
 public class TicketEntityConfiguration : IEntityTypeConfiguration<Ticket>
 {
     public void Configure(EntityTypeBuilder<Ticket> builder)
@@ -42,16 +44,15 @@ public class TicketEntityConfiguration : IEntityTypeConfiguration<Ticket>
         builder.ToTable("Tickets");
         builder.HasKey(p => p.Id);
 
-        builder.Property(x => x.Ad).IsRequired();
-        builder.Property(x => x.Soyad).IsRequired();
-
+        //builder.Property(x => x.Ad).IsRequired();
+        //builder.Property(x => x.Soyad).IsRequired();
 
         #region ForeingKey
 
         builder.HasOne(d => d.ApplicationUser)
             .WithMany(p => p.Tickets)
             .HasForeignKey(d => d.UserId)
-            .OnDelete(DeleteBehavior.ClientSetNull);
+            .OnDelete(DeleteBehavior.Restrict);
 
         #endregion
 

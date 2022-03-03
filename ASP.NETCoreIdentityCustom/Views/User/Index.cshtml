@@ -7,17 +7,17 @@
 @model  ICollection<ASP.NETCoreIdentityCustom.Areas.Identity.Data.ApplicationUser>
 
 <div class="text-center">
-    <h1 class="display-4">Users</h1>
+    <h1 class="display-4">Kullanıcı Ayarları</h1>
     @if ( @Model != null && @Model.Any())
     {
         <table class="table">
             <thead>
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
+                <th scope="col">User ID</th>
+                <th scope="col">Ad</th>
+                <th scope="col">Soyad</th>
                 <th scope="col">Email</th>
-                <th scope="col">Edit</th>
+                <th scope="col">Düzenle</th>
             </tr>
             </thead>
             <tbody>
@@ -29,7 +29,7 @@
                 <td>@user.LastName</td>
                 <td>@user.Email</td>
                 <td>
-                    <a asp-controller="User" asp-action="Edit" asp-route-id="@user.Id">Edit</a>
+                    <a asp-controller="User" asp-action="Edit" asp-route-id="@user.Id">Düzenle</a>
                 </td>
             </tr>
             }

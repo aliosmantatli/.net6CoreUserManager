@@ -19,6 +19,7 @@ public class ApplicationUser : IdentityUser
     public string LastName { get; set; }
 
     public  ICollection<Ticket> Tickets { get; set; }
+    
 }
 
 public class ApplicationRole : IdentityRole
