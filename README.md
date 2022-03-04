@@ -5,7 +5,7 @@
 - Arayüz türkçeleştirme - tamam
 - Kullanıcı talep oluşturma-görüntüleme - tamam
 - Manager talep görüntüleme onaylama(olumlu-olumsuz) - tamam 
-- Manager talep onay mail gönderme ve çıktı alma - 
+- Manager onay mail gönderme ve çıktı alma - 
 
 
 Kaynaklar
