@@ -4,9 +4,9 @@
 - Kullanıcı user ve manager role tanımlama - tamam 
 - Arayüz türkçeleştirme - tamam
 - Kullanıcı talep oluşturma-görüntüleme - tamam
-- Manager talep görüntüleme onaylama(olumlu-olumsuz) - 
-- Manager talep onay mail gönderme - 
-- Manager talepler çıktı alma(olumlu-olumsuz) - 
+- Manager talep görüntüleme onaylama(olumlu-olumsuz) - tamam 
+- Manager talep onay mail gönderme ve çıktı alma - 
+
 
 Kaynaklar
 - https://docs.microsoft.com/tr-tr/aspnet/core/mvc/controllers/routing?view=aspnetcore-6.0
