@@ -98,7 +98,7 @@ namespace ASP.NETCoreIdentityCustom.Controllers
 
 
         //Edit Kısmını User Role için
-        [Authorize(Roles = "Manager")]
+        //[Authorize(Roles = "Manager")]
         // POST: Tickets/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -111,27 +111,29 @@ namespace ASP.NETCoreIdentityCustom.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            try
             {
-                try
-                {
-                    _context.Update(ticket);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!TicketExists(ticket.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                var ticketUpdate = await _context.Tickets.FirstOrDefaultAsync(m => m.Id == id);
+
+                ticketUpdate.OnayDurumu = ticket.OnayDurumu;
+                ticketUpdate.OnayTarihi = ticket.OnayTarihi;
+
+                _context.Update(ticketUpdate);
+                await _context.SaveChangesAsync();
             }
-            return View(ticket);
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!TicketExists(ticket.Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return RedirectToAction(nameof(Index));
         }
 
         //Delete Kısmını User Role için
